@@ -1,0 +1,9 @@
+.welcome {
+  text-align: center;
+}
+
+.welcomeWide {
+  border: 1px solid lightgray;
+  padding: 10px;
+  margin:30px
+}

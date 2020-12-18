@@ -1,0 +1,15 @@
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+  min-height: 100%;
+}
+
+mat-sidenav {
+  width: 250px
+}
+
+
+
+
+#logo a {
+  color: aliceblue;
+  text-decoration: none;
+}

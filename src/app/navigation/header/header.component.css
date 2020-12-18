@@ -1,0 +1,23 @@
+
+li a {
+  text-decoration: none;
+  color: white !important;
+}
+
+  li a:hover,
+  li a:active {
+    color: lightgray !important;
+    text-decoration: underline;
+  }
+
+.navigation {
+  list-style: none;
+}
+
+#logo{
+    color:white !important
+}
+
+div a {
+  color: white !important
+}
