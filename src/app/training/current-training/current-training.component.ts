@@ -59,6 +59,8 @@ export class CurrentTrainingComponent implements OnInit {
     this.finished = false;
     this.DIS = true;
     this.currentExercise = this.trainingService.getRunningExercise();
+    //console.log('this.currentExercise.dur :');
+    //console.log(this.currentExercise.duration);
     const duration = this.trainingService.getRunningExercise().duration;
     this.timeLeft = duration;
 

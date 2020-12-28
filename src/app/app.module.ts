@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { UserService } from './auth/user.model';
 import { AppComponent } from './app.component';
@@ -22,6 +23,7 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
 import { StopDialogComponent } from './training/current-training/stop-dialog/stop-dialog.component';
 import { TrainingService } from './training/exercise.model';
 import { environment } from '../environments/environment';
+import {UIService} from 'src/app/Shared/UI.Service'
 
 @NgModule({
   declarations: [
@@ -44,11 +46,16 @@ import { environment } from '../environments/environment';
     MaterialModule,
     FlexLayoutModule,
     FormsModule,
+    ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
+    AngularFireAuthModule,
   ],
-  providers: [UserService, TrainingService],
+  providers: [UserService, TrainingService,UIService],
   bootstrap: [AppComponent],
   entryComponents: [StopDialogComponent],
 })
 export class AppModule {}
+
+
+

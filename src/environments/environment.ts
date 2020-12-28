@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  authSnackBarDuration:6000,
   firebase: {
     apiKey: "AIzaSyAsxljRPGVlI8qhEAWX4SpnGP-ozNH-USQ",
     authDomain: "ng-ft-fd861.firebaseapp.com",

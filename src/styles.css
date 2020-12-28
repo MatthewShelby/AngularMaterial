@@ -2,3 +2,11 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.loadSpinner{
+    /* float:left; 
+    width: 24px; 
+    height: 24px; */
+    margin: 20px 20px 20px 20px; 
+
+}

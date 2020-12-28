@@ -4,12 +4,11 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\auth",
-    "\\src\\app\\auth\\signup",
     "\\src\\app\\training",
     "\\src\\app\\training\\current-training",
     "\\src\\app\\training\\current-training\\stop-dialog",
     "\\src\\app\\training\\new-training"
   ],
-  "SelectedNode": "\\src\\app\\training\\current-training\\current-training.component.ts",
+  "SelectedNode": "\\src\\main.ts",
   "PreviewInSolutionExplorer": false
 }

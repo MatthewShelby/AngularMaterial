@@ -57,8 +57,21 @@
       mat-raised-button
       color="primary"
       [disabled]="f.invalid"
+      *ngIf="!isLoading"
+
     >
       Login
     </button>
+    <button
+      type="button"
+      mat-button
+      color="primary"
+      class="fp"
+      (click)="resetPassword()"
+      *ngIf="isShowingForgotPassword"
+    >
+      forgot password
+    </button>
+    <mat-spinner [diameter]="50" *ngIf="isLoading"></mat-spinner>
   </form>
 </section>
